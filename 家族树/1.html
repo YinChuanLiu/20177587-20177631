@@ -8,22 +8,46 @@
 </head>
 <body>
 
-
-<div class="layui-form-item layui-form-text">
-    <label class="layui-form-label">输入框</label>
-    <div class="layui-input-block">
-        <textarea name="desc" id="info" placeholder="请输入内容" class="layui-textarea"></textarea>
+<h1>家族树</h1>
+<div class="layui-row">
+    <div class="layui-col-md3">
+          &nbsp;
     </div>
+    <div class="layui-col-md6">
+
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">家族信息</label>
+            <div class="layui-input-block">
+                <textarea name="desc" id="info" placeholder="请输入内容" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button id="btn" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div id="test1"  style="margin-left: 15%"></div>
+
+    </div>
+    <div class="layui-col-md3">
+        &nbsp;
+    </div>
+
 </div>
 
-<div class="layui-form-item">
-    <div class="layui-input-block">
-        <button id="btn" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-    </div>
-</div>
 
 
-<div id="test1"></div>
+
+
+
+
+
 <script src="./layui.js"></script>
 
 
@@ -81,7 +105,7 @@
             var tree = layui.tree;
             //渲染
             var inst1 = tree.render({
-                elem: '#test1'  //绑定元素   654321111
+                elem: '#test1'  //绑定元素 修改布局
                 , data: da
             });
         });
